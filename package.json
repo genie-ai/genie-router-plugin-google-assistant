@@ -1,0 +1,37 @@
+{
+  "name": "genie-router-plugin-google-assistant",
+  "version": "1.0.0",
+  "description": "Genie Router plugin to interact with the Google assistant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matueranet/genie-router-plugin-google-assistant.git"
+  },
+  "bin": {
+    "google-assistent-setup": "setup.js"
+  },
+  "keywords": [
+    "genie-router",
+    "plugin"
+  ],
+  "author": "matueranet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matueranet/genie-router-plugin-google-assistant/issues"
+  },
+  "homepage": "https://github.com/matueranet/genie-router-plugin-google-assistant#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "google-assistant": "^0.2.2",
+    "googleapis": "^25.0.0"
+  },
+  "genieRouterPlugin": {
+    "name": "google-assistant"
+  }
+}
