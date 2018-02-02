@@ -12,11 +12,14 @@ Its configuration consists of three steps:
 [Follow the instructions](https://developers.google.com/assistant/sdk/prototype/getting-started-other-platforms/config-dev-project-and-account) to create
 a JSON file for OAuth2 permissions.
 
+Verify using an 'official' Assistant client (Android phone, Google Home, etc), that you can use the Assistant
+with your account. Google Apps accounts for example need to have it explicitly enabled.
+
 # Install plugin
 
 ## Plugin configuration
 
-### oauth2PermissionsPath
+### googleClientSecretPath
 
 Required. This is the file path to the .json file you create by following the instruction for the enabling of the API on
 Google Cloud.
