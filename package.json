@@ -11,7 +11,7 @@
     "url": "git+https://github.com/matueranet/genie-router-plugin-google-assistant.git"
   },
   "bin": {
-    "google-assistent-setup": "setup.js"
+    "google-assistant-setup": "bin/setup"
   },
   "keywords": [
     "genie-router",
@@ -28,8 +28,7 @@
   },
   "dependencies": {
     "debug": "^3.1.0",
-    "google-assistant": "^0.2.2",
-    "googleapis": "^25.0.0"
+    "google-assistant": "^0.2.2"
   },
   "genieRouterPlugin": {
     "name": "google-assistant"

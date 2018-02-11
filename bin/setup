@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const GoogleAssistant = require('google-assistant')
 
 if (process.argv.length !== 3) {
@@ -14,11 +16,11 @@ const auth = {
 }
 const assistant = new GoogleAssistant(auth)
 assistant
-    .on('ready', () => {
-      console.log('Assistant initialized. Access token stored.')
-      process.exit(0)
-    })
-    .on('error', (error) => {
-      console.log('Assistant error: ', error)
-      process.exit(2)
-    })
+  .on('ready', () => {
+    console.log('Assistant initialized. Access token stored in', config.plugins['google-assistant'].tokensStorePath)
+    setTimeout(() => process.exit(), 2000) // give the process time to write the tokens
+  })
+  .on('error', (error) => {
+    console.log('Assistant error: ', error)
+    process.exit(2)
+  })

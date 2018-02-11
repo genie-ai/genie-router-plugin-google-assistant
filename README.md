@@ -54,9 +54,9 @@ Install the plugin by running:
 
     npm install --save matueranet/genie-router-plugin-google-assistant
 
-After installation has completed, run:
+After installation has completed, run (still in your plugin folder):
 
-    ./node_modules/.bin/google-assistent-setup
+    ./node_modules/.bin/google-assistant-setup
 
 This will start the linking process of your Google account. It will output something similar to:
 
@@ -69,3 +69,7 @@ Paste your code: (node:996) UnhandledPromiseRejectionWarning: Unhandled promise 
 The unhandled promise rejection can be ignored. Open the URL in your browser, login and authorize the app to use your account. Copy the
 code displayed, and paste it in the console and press enter. The process should continue and output: _Assistant initialized._ Next
 time you run the script it should not show the URL again, but immediately echo the Assistant initialized output.
+
+# Future improvements
+
+- Simplify generating an accessToken for the Google account by doing an OAuth flow from the webbrowser.
