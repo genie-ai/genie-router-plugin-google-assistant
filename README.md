@@ -17,6 +17,11 @@ with your account. Google Apps accounts for example need to have it explicitly e
 
 # Install plugin
 
+At the plugin location ($HOME/.genie-router), type:
+
+    npm install --save @genie-ai/genie-router-plugin-google-assistant
+
+
 ## Plugin configuration
 
 ### googleClientSecretPath
